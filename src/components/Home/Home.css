@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+.home-container {
+    width: 95vw;
+    height: 90vh;
+    background-color: #E1E1E0;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-heading {
+    color: #314633;
+    font-weight: 800;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 32px;
+    display: flex;
+}

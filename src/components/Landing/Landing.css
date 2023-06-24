@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.landing-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+.landing-container {
+    width: 95vw;
+    height: 90vh;
+    background-color: #E1E1E0;
+    display: flex;
+    flex-direction: column;
+}
+
+.landing-main-section {
+    display: flex;
+}
+
+.landing-graphic {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+}
+
+.landing-img {
+    margin-bottom: 1em;
+}
+
+.landing-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+.landing-header {
+    margin-top: 2.5em;
+    margin-left: 3.5em;
+    color: #314633;
+    font-weight: 800;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 48px;
+    display: flex;
+}
+
+.landing-main {
+    width: 55%;
+    margin-top: 2.25em;
+    margin-left: 10.7em;
+    font-weight: 400;
+    color: #274017;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.landing-socials {
+    position: relative;
+    left: 1.5em;
+    bottom: 6em;
+    display: flex;
+    flex-direction: column;
+    max-width: max-content;
+}
+
+.landing-icon {
+    margin: 0.3em 0em;
+    color: #526015;
+}
+
+.landing-icon:hover {
+    transform: scale(1.75) ;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.landing-scroll {
+    position: relative;
+    left: 88.25em;
+    bottom: 8em;
+    max-width: max-content;
+}
+
+.landing-copyright {
+    position: relative;
+    bottom: 12.5em;
+    left: 57.5em;
+    color: #526015;
+    font-size: 12px;
+    max-width: max-content;
+}
+
+.text-one {
+    padding-right: 0.2em;
+}
+
+.landing-header .text-two {
+    line-height: 60px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.text-two li {
+    list-style: none;
+    position: relative;
+    top: 0;
+    color: #526015;
+    animation: slide 6s steps(3) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -180px;
+    }
+}
+
+.text-two {
+    max-width: max-content;
+}
+
+
+.text-two li {
+    position: relative;
+}
+
+.text-two li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid #526015;
+    animation: typing 2s steps(6) infinite;
+    background-color: #E1E1E0;
+}
+
+@keyframes typing {
+    40%,
+    60% {
+        left: calc(100% + 30px);
+    }
+    100% {
+        left: 0;
+    }
+}
+

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    font-family: 'Lobster', cursive;
+    font-size: 32px;
+    color: #526015;
+    padding: 1em 2em;
+}
+
+.navbar-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0em 4em;
+}
+
+.navbar-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0em 4em;
+}
+
+.navbar-element {
+    padding: 0em 2em;
+    color: #526015;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+.navbar-element:hover {
+    font-weight: 900;
+    color: #274017;
+    cursor: pointer;
+}
+
+.navbar-profile:hover {
+    transform: scale(1.35);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.border {
+    border-right: 1px solid #526015;
+}
