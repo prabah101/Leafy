@@ -31,10 +31,7 @@ const Landing = () => {
                 </ul>
               </div>
               <div className="landing-main">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Facere, perferendis suscipit nobis aliquam pariatur sed ullam!
-                Fugit, quod voluptates! Nisi cupiditate possimus explicabo
-                repellendus officia, dolores porro non! Magnam, exercitationem.
+              Welcome to our plant disease detection website. Using cutting-edge technology and advanced algorithms, we swiftly analyze uploaded images of plants to identify diseases accurately. With our user-friendly interface and expert guidance, you can make informed decisions to protect your crops and ensure their productivity. Join us today and safeguard the health of your plants for a sustainable future.
               </div>
             </section>
           </div>

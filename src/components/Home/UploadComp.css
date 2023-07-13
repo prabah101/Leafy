@@ -1,0 +1,31 @@
+.uploadComp-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-btn{
+    display: inline-block;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    padding: 12px 17px;
+    border-radius: 50px;
+    background-color: white;
+    color: #222;
+    font-size: 16px;
+    font-weight: 500;
+    :hover {
+        background-color: #2222221a;
+    }
+}
+
+.input{
+    margin-top: 20px;
+}
+
+.upload-button{
+    margin-top: 100px;
+}
+

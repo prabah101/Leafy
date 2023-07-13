@@ -2,6 +2,8 @@ import React from 'react'
 import Navbar from "../Navbar/Navbar";
 import './Home.css'
 import { useRef, useState } from 'react'
+import CardItem from '../Card/Card';
+import Popup from '../Popup/Popup';
 
 import potato from '../images/potato.jpg'
 import bellPepper from "../images/pepper.jpg"
@@ -10,6 +12,21 @@ import apple from "../images/apple.jpg"
 import grape from "../images/grape.jpg"
 import corn from "../images/corn.jpg"
 
+import { styled } from '@mui/material/styles';
+import Grid from '@mui/material/Grid';
+import Paper from '@mui/material/Paper';
+import Box from '@mui/material/Box';
+
+
+const Item = styled(Paper)(() => ({
+  backgroundColor: '#E1E1E0',
+  boxShadow: 'none',
+  // padding: 8,
+  width: 250,
+  height: 225,
+  textAlign: 'center',
+  color: 'black',
+}));
 
 
 const Home = () => {
@@ -38,20 +55,32 @@ const Home = () => {
       <div className="home-container">
         <Navbar />
         <div className="home-main-content">
-          <h1 className="home-heading"> Upload From Gallery</h1>
-          <input type='file' className='file-selector' ref={inputRef} onChange={handleImageChange} required/><br/>
+          <div className='cards'>
+          <Box className="boxes">
+            <Grid container rowSpacing={6} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+              <Grid item xs={4}>
+                  <Item><Popup cropName="potato" crop={potato}/></Item>
+                </Grid>
+                <Grid item xs={4}>
+                  <Item><Popup cropName="corn" crop={corn}/></Item>
+                </Grid>
+                <Grid item xs={4}>
+                  <Item><Popup cropName="tomato" crop={tomato}/></Item>
+                </Grid>
+              <Grid item xs={4}>
+                <Item><Popup cropName="grape" crop={grape} /></Item>
+              </Grid>
+              <Grid item xs={4}>
+                <Item><Popup cropName="bellPepper" crop={bellPepper}/></Item>
+              </Grid>
+              <Grid item xs={4}>
+                <Item><Popup cropName="apple" crop={apple}/></Item>
+              </Grid>
+            </Grid>
+          </Box>
 
-          <div className='uploaded-pic' onClick={handleImageClick}>
-            {image ? <img src={URL.createObjectURL(image)} alt=''/> : <img src='' alt=''/>}
-            <h5 id='img-upld-text'>Image Uploaded will be Displayed Here</h5>
+
           </div>
-          
-          <button className='category-btn'><img src={potato} className='crop-img' alt='potato-img'/><br/>Potato</button>
-          <button className='category-btn'><img src={bellPepper} className='crop-img' alt='potato-img'/><br/>Bell-Pepper</button>
-          <button className='category-btn'><img src={tomato} className='crop-img' alt='potato-img'/><br/>Tomato</button>
-          <button className='category-btn'><img src={apple} className='crop-img' alt='potato-img'/><br/>Apple</button>
-          <button className='category-btn'><img src={grape} className='crop-img' alt='potato-img'/><br/>Grape</button>
-          <button className='category-btn'><img src={corn} className='crop-img' alt='potato-img'/><br/>Corn</button><br></br>
 
 
         </div>
